@@ -18,6 +18,11 @@ dnf module enable nodejs:20 -y
 dnf install nodejs -y
 ```
 
+Update openssl packages too not break SSH login
+```
+dnf update -y openssh openssh-server openssh-clients
+```
+
 Configure the application.
 
 Add application User
